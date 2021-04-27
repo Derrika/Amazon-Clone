@@ -1,0 +1,18 @@
+events.js:292
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EACCES: permission denied 127.0.0.1:4000
+    at Server.setupListenHandle [as _listen2] (net.js:1296:21)
+    at listenInCluster (net.js:1361:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1498:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:68:8)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1340:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'EACCES',
+  errno: 'EACCES',
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 4000
+}

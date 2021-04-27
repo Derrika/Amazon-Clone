@@ -32,6 +32,14 @@ function Home() {
           rating={4}
           image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SL1500_.jpg"
         />
+
+        <Product
+          id="2356880"
+          title="Shea Moisture Coconut and Hibiscus Combination Pack – 13 oz. Curl & Shine Shampoo, 13 oz. Curl & Shine Conditioner & 12 oz. Curl Enhancing Smoothie"
+          price={29.84}
+          rating={5}
+          image="https://images-na.ssl-images-amazon.com/images/I/71PsJ%2BqqcBL._SL1500_.jpg"
+        />
       </div>
 
       <div className="home__row">

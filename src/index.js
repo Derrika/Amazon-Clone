@@ -1,6 +1,9 @@
-import React from "react";
-//InitialState: what the data looks like in the begin
+ /**Data Layer is so that every component con get access to the data layer, therefore if we push information in we can pull it out back */
+
+ //InitialState: what the data looks like in the begin
 //Reducer is how we manipulate with the data
+
+import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
@@ -9,10 +12,8 @@ import * as serviceWorker from "./serviceWorker";
 import { StateProvider } from "./component/StateProvider";
 import reducer, { initialState } from "./component/reducer";
 
-ReactDOM.render(
+ReactDOM.render( 
   <React.StrictMode>
-    {/**Data Layer is so that every component con get access to the data layer, therefore if we push information in we can pull it out back */}
-
     <StateProvider initialState={initialState} reducer={reducer}>
       <App />
     </StateProvider>

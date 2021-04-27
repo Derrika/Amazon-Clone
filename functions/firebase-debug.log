@@ -1,0 +1,44 @@
+[debug] [2020-09-25T00:24:11.411Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T00:24:11.414Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dcole\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-09-25T00:24:11.415Z] CLI Version:   8.10.0
+[debug] [2020-09-25T00:24:11.415Z] Platform:      win32
+[debug] [2020-09-25T00:24:11.415Z] Node Version:  v12.18.0
+[debug] [2020-09-25T00:24:11.417Z] Time:          Thu Sep 24 2020 20:24:11 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-09-25T00:24:11.417Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T00:24:11.418Z] 
+[debug] [2020-09-25T00:24:11.530Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-25T00:24:11.531Z] > authorizing via signed-in user
+[debug] [2020-09-25T00:24:11.531Z] [iam] checking project clone-d351d for permissions ["firebase.projects.get"]
+[debug] [2020-09-25T00:24:11.534Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-09-25T00:24:11.534Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-09-25T00:24:11.861Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 25 Sep 2020 00:24:12 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-25T00:24:11.949Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-d351d:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-09-25T00:24:12.598Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 25 Sep 2020 00:24:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=144","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "10" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"12\""}}
+[debug] [2020-09-25T00:24:14.703Z] defaultcredentials: writing to file C:\Users\dcole\AppData\Roaming\firebase\coley_derrikabusiness_gmail.com_application_default_credentials.json
+[debug] [2020-09-25T00:24:14.715Z] DEBUG: Setting GAC to C:\Users\dcole\AppData\Roaming\firebase\coley_derrikabusiness_gmail.com_application_default_credentials.json
+[debug] [2020-09-25T00:24:14.742Z] [functions] Watching "C:\Users\dcole\Desktop\Personal\react-chalenges\amazon-clone\functions" for Cloud Functions...
+[debug] [2020-09-25T00:24:14.852Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-09-25T00:24:14.852Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-09-25T00:24:14.853Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-09-25T00:24:14.853Z] DEBUG: [worker-~diagnostic~-64d85e60-92af-4524-a6aa-1d37c401ebab]: Assigning socketPath: \\?\pipe\C:\Users\dcole\Desktop\Personal\react-chalenges\amazon-clone\functions\5228
+[debug] [2020-09-25T00:24:14.854Z] DEBUG: [worker-~diagnostic~-64d85e60-92af-4524-a6aa-1d37c401ebab]: BUSY
+[debug] [2020-09-25T00:24:15.932Z] DEBUG: [runtime-status] [5228] Functions runtime initialized. {"cwd":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions","node_version":"12.18.0"}
+[debug] [2020-09-25T00:24:15.937Z] DEBUG: [runtime-status] [5228] Disabled runtime features: undefined
+[debug] [2020-09-25T00:24:15.978Z] DEBUG: [runtime-status] [5228] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-09-25T00:24:15.991Z] DEBUG: [runtime-status] [5228] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-25T00:24:15.993Z] DEBUG: [runtime-status] [5228] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-25T00:24:15.996Z] DEBUG: [runtime-status] [5228] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-09-25T00:24:15.999Z] DEBUG: [runtime-status] [5228] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-25T00:24:16.875Z] DEBUG: [runtime-status] [5228] Checked functions.config() {"config":{}}
+[debug] [2020-09-25T00:24:16.875Z] DEBUG: [runtime-status] [5228] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-09-25T00:24:16.877Z] DEBUG: [runtime-status] [5228] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-25T00:24:16.883Z] DEBUG: [runtime-status] [5228] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-09-25T00:24:16.884Z] DEBUG: [runtime-status] [5228] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-09-25T00:24:16.885Z] DEBUG: [runtime-status] [5228] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Users\\dcole\\Desktop\\Personal\\react-chalenges\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-09-25T00:24:18.705Z] [functions[api]] http function initialized (http://localhost:5000/clone-d351d/us-central1/api).
+[info] i  functions: Loaded functions: api 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub 
+[debug] [2020-09-25T00:24:18.992Z] DEBUG: [worker-~diagnostic~-64d85e60-92af-4524-a6aa-1d37c401ebab]: IDLE
